@@ -23,7 +23,7 @@ if(isset($_POST['loginId'])){
 	{
 		echo "<b>Thank you for logging in!</b>".
 		"<p><a href=\"client.php\">Click here to return to main page</a></p>".
-		"<p><a href=\"client.php?page=profile\">Click here to view your profile</a></p>";
+		"<p><a href=\"client.php?page=profile&id=".$_SESSION['loginName']."\">Click here to view your profile</a></p>";
 	}
 	else
 	{

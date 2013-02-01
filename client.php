@@ -17,11 +17,11 @@ else{
 	if($page=="main"){
 		main();
 	}
-	else if($page=="create"){
-		echo "create<br>\n";
-	}
 	else if($page=="register"){
 		register();
+	}
+	else if($page == "profile"){
+		profile();
 	}
 }
 
@@ -33,6 +33,10 @@ function main(){
 function register(){
 	global $data;
 	include 'register.php';
+}
+function profile(){
+	global $data;
+	include 'profile.php';
 }
 
 ?>
