@@ -1,4 +1,6 @@
+<?php session_start(); ?>
 <?php
+
 $string=file_get_contents("data.json");
 $data=json_decode($string,true);
 
@@ -7,7 +9,6 @@ echo "no data<br>\n";
 }
 
 if(!isset($_GET['page'])){
-	echo "no direction<br>\n";
 	main();
 	exit;
 }
